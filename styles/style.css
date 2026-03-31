@@ -12,10 +12,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body main {
-  padding-top: 88px;
+body {
   width: 100vh;
   margin: auto;
+}
+body main {
+  padding-top: 88px;
 }
 body main img {
   border-radius: 28px;
