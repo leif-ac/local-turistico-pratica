@@ -1,2 +1,96 @@
 /* Background */
 /* Textos */
+/* Font Size */
+/* Font Size */
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body main {
+  padding-top: 88px;
+  width: 100vh;
+  margin: auto;
+}
+body main img {
+  border-radius: 28px;
+  width: 100%;
+}
+body main h1,
+body main h2,
+body main h3 {
+  color: #1B1B1B;
+  font-weight: bold;
+}
+body main h1 {
+  font-size: 36px;
+  padding-bottom: 40px;
+}
+body main h2 {
+  font-size: 32px;
+}
+body main h3 {
+  font-size: 28px;
+}
+body main .highlight {
+  font-size: 16px;
+  color: #E1624F;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body main .blue,
+body main .orange,
+body main .pink,
+body main .purple {
+  font-weight: bold;
+}
+body main .blue {
+  color: #0C51A7;
+}
+body main .orange {
+  color: #E95E10;
+}
+body main .pink {
+  color: #E5245E;
+}
+body main .purple {
+  color: #591B98;
+}
+body main #title {
+  padding-bottom: 40px;
+}
+body main #title #main-description {
+  margin-top: 24px;
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+}
+body main #content {
+  border-top: solid 1px #D9D9D9;
+  padding-bottom: 40px;
+}
+body main #content #headline {
+  padding: 64px 0;
+}
+body main #content #list-container .container + .container {
+  margin-top: 48px;
+}
+body main #content #list-container .container img {
+  padding-bottom: 20px;
+}
+body main #content #list-container .container h3 {
+  padding-left: 5px;
+}
+body main #content #list-container .container ul {
+  padding-left: 18px;
+}
+body main #description {
+  padding-top: 40px;
+  border-top: solid 1px #D9D9D9;
+  text-align: center;
+}

@@ -13,3 +13,157 @@
 @accent-orange: #E95E10;
 @accent-pink: #E5245E;
 @accent-purple: #591B98;
+
+/* Font Size */
+// @font-h1: {
+//     font-size: 36px;
+//     font-weight: bold;
+// };
+// @font-h2: {
+//     font-size: 32px;
+//     font-weight: bold;
+// };
+// @font-h3: {
+//     font-size: 28px;
+//     font-weight: bold;
+// };
+// @font-headline {
+//     font-size: 16px;
+//     font-weight: bold;
+// };
+// @font-paragraph {
+//     font-size: 16px;
+//     font-weight: normal;
+// };
+// @font-subtitle {
+//     font-size: 16px;
+//     font-style: italic;
+// };
+
+/* Font Size */
+@size-h1: 36px;
+@size-h2: 32px;
+@size-h3: 28px;
+@size-headline: 16px;
+@size-paragraph: 16px;
+@size-subtitle: 16px;
+
+
+:root {
+    font-family: "Open Sans", sans-serif;
+    font-size: @size-paragraph;
+    color: @text-secondary;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    main {
+        padding-top: 88px;
+        width: 100vh;
+        margin: auto;
+
+        img {
+            border-radius: 28px;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            color: @text-primary;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: @size-h1;
+            padding-bottom: 40px;
+        }
+
+        h2 {
+            font-size: @size-h2;
+        }
+
+        h3 {
+            font-size: @size-h3;
+        }
+
+        .highlight {
+            font-size: @size-headline;
+            color: @text-headline;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .blue, .orange, .pink, .purple {
+            font-weight: bold;
+        }
+
+        .blue {
+            color: @accent-blue;
+        }
+
+        .orange {
+            color: @accent-orange;
+        }
+
+        .pink {
+            color: @accent-pink;
+        }
+
+        .purple {
+            color: @accent-purple;
+        }
+
+        #title {
+            padding-bottom: 40px;
+
+            #main-description {
+                margin-top: 24px;
+                font-size: @size-subtitle;
+                text-align: center;
+                font-style: italic;
+            }
+        }
+        #content {
+            border-top: solid 1px @border-primary;
+            padding-bottom: 40px;
+
+            #headline {
+                padding: 64px 0;
+            }
+
+            #list-container {
+                .container + .container {
+                    margin-top: 48px;
+                }
+
+                .container {
+                    img {
+                        padding-bottom: 20px;
+                    }
+
+                    h3 {
+                        padding-left: 5px
+                    }
+
+                    ul {
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+
+        #description {
+            padding-top: 40px;
+            border-top: solid 1px @border-primary;
+            text-align: center;
+        }
+
+    }
+
+    footer {}
+
+}
